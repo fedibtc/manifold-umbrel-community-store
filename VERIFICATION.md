@@ -28,3 +28,7 @@ The new repository's clone and artwork URLs need checking after publication.
 
 Independent package and evidence review: Codex (GPT-6), `/root/community_store_review`;
 no findings on package consistency, the documented handoff or verification evidence.
+
+September 25, 2026: removed the UDP port mapping to match the updated official
+submission. A follow-up test reported both live guardians regained the same
+direct peer connections without it.
