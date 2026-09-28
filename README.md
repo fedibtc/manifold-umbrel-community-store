@@ -1,45 +1,42 @@
-# Manifold Community App Store
+# Manifold Community App Store (retired)
 
-Install **Manifold Fedimint Guardian** on Umbrel while its
-[official listing](https://github.com/getumbrel/umbrel-apps/pull/6110) is under review.
-This store is maintained by Fedi and uses the same app ID and runtime package
-as the submission. Only the listing's artwork links differ.
+> **Manifold Fedimint Guardian is now in the official Umbrel App Store.**
+> Install it from there: https://apps.umbrel.com/app/manifold-fedimint-guardian
+>
+> **Do not add this store for new installs.** Umbrel will show
+> "This app ID conflicts with another app" and the Install button will be
+> grayed out, because this store uses the same app ID as the official listing.
 
-## Install
+## New install
 
-1. In Umbrel, open **App Store → Community App Stores** (under the menu).
-2. Add `https://github.com/fedibtc/manifold-umbrel-community-store`.
-3. Open the **Manifold** store and install **Manifold Fedimint Guardian**.
-   It requires Umbrel's **Bitcoin Node** on mainnet.
-4. Open Guardian and use the app password shown by Umbrel. Follow the
-   [Guardian guide](https://manifold.fedi.xyz/) to finish setup and authorization.
+1. In Umbrel, open the main **App Store** and search for
+   **Manifold Fedimint Guardian**.
+2. Select **Install**. It requires Umbrel's **Bitcoin Node** (or Bitcoin Knots)
+   on mainnet.
+3. Open Guardian and use the app password shown by Umbrel. Follow the
+   [Guardian guide](https://manifold.fedi.xyz/guardian-guide.html) to finish
+   setup and authorization.
 
-## When the official listing is available
+If you already added this store and see the conflict message, remove it:
+**App Store → ⋯ menu → Community App Stores → Manifold → Remove**, then
+install from the main App Store as above.
 
-1. Confirm the official Umbrel store lists app ID `manifold-fedimint-guardian`.
-2. Remove **Manifold** from Community App Stores. **Do not uninstall Guardian:**
-   uninstalling the app deletes its data.
-3. Keep using the installed Guardian. Future updates come from the official
-   store; no reinstall or data move is needed when the ID and data paths match.
+## Already installed from this store?
 
-Both stores may list Guardian during the handoff. They refer to the same
-installation. Keep this store added until the official listing appears on
-your device so updates remain available.
+1. Remove **Manifold** from Community App Stores.
+2. **Do not uninstall Guardian.** Uninstalling deletes its data.
+3. Keep using your installed Guardian. It uses the same app ID and data paths
+   as the official listing, so updates come from the official store with no
+   reinstall or data move.
 
 ## Existing Fedi Dev installations
 
-The [Fedi Dev store](https://github.com/fedibtc/manifold-umbrel-store) is separate
-and unchanged. Its apps have different IDs, so this store does not adopt their
-data. Existing Fedi Dev users should keep using their installation; moving it
-requires a separately planned transfer.
+The [Fedi Dev store](https://github.com/fedibtc/manifold-umbrel-store) is
+separate and unchanged. Its apps have different IDs. Existing Fedi Dev users
+should keep using their installation; moving it requires a separately planned
+transfer.
 
-## Package maintenance
+## Support
 
-The initial package is version `0.1.0`, copied from official submission commit
-[`a5ca25b7`](https://github.com/fedibtc/umbrel-apps/commit/a5ca25b7d5cb832d37308527cffc5815d6e7c1b4).
-Keep the app ID, image pin, version, storage paths and password setup aligned
-with that submission and the eventual official package. Never rename the app
-or replace a released version with a different image. Compare the final
-official package before announcing the handoff.
-
-Package preparation and verification: Codex (GPT-6), agent `/root`.
+Issues with the Umbrel package: open an issue in this repository.
+Issues with the guardian software: https://github.com/fedibtc/manifold/issues
